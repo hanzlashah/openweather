@@ -77,3 +77,91 @@ h1 {
   color: red;
   margin-top: 20px;
 }
+
+strong {
+  margin-right: 20px;
+}
+
+p {
+  padding: 10px 0;
+}
+
+/* For 320px wide devices (e.g., small smartphones like iPhone SE) */
+@media only screen and (max-width: 320px) {
+
+  /* Your styles for devices with 320px or smaller screens */
+  body {
+    background-color: lightblue;
+  }
+
+  .search-container input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .search-container button {
+    width: 100%;
+  }
+
+  .weather-container {
+    width: 95%;
+  }
+
+  /* Add more styles as needed */
+}
+
+/* For 375px wide devices (e.g., iPhone 6/7/8) */
+@media only screen and (max-width: 375px) {
+
+  /* Your styles for devices with 375px or smaller screens */
+  body {
+    background-color: lightgreen;
+  }
+
+  .search-container input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .search-container button {
+    width: 100%;
+  }
+
+  .weather-container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  /* Add more styles as needed */
+}
+
+/* For 425px wide devices (e.g., iPhone 6/7/8 Plus) */
+@media only screen and (max-width: 425px) {
+
+  /* Your styles for devices with 425px or smaller screens */
+  body {
+    background-color: lightcoral;
+  }
+
+  .search-container input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .search-container button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  /* Add more styles as needed */
+}
