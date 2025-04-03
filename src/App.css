@@ -1,38 +1,79 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Set full viewport size and background styles */
+.weather-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transition: background 1s ease-in-out;
+  /* Smooth transition for background change */
+  color: white;
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container for the weather details */
+.weather-container {
+  background: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Title */
+h1 {
   color: white;
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+/* Search input and button */
+.search-container {
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-container input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Weather details */
+.weather-details {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Slightly transparent background for weather info */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Error message */
+.error {
+  color: red;
+  margin-top: 20px;
 }
