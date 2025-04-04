@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import "./App.css"; // Import your custom styles
 
@@ -62,6 +61,7 @@ const App = () => {
         height: "100vh",
         width: "100%",
         display: "flex",
+        boxSizing: "border-box",
         justifyContent: "center",
         alignItems: "center",
         transition: "background 1s ease-in-out", // Smooth transition for background change
