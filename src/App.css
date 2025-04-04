@@ -90,9 +90,7 @@ p {
 @media only screen and (max-width: 320px) {
 
   /* Your styles for devices with 320px or smaller screens */
-  body {
-    background-color: lightblue;
-  }
+
 
   .search-container input {
     width: 100%;
@@ -118,9 +116,7 @@ p {
 @media only screen and (max-width: 375px) {
 
   /* Your styles for devices with 375px or smaller screens */
-  body {
-    background-color: lightgreen;
-  }
+
 
   .search-container input {
     width: 100%;
@@ -145,10 +141,6 @@ p {
 /* For 425px wide devices (e.g., iPhone 6/7/8 Plus) */
 @media only screen and (max-width: 425px) {
 
-  /* Your styles for devices with 425px or smaller screens */
-  body {
-    background-color: lightcoral;
-  }
 
   .search-container input {
     width: 100%;
@@ -164,4 +156,20 @@ p {
   }
 
   /* Add more styles as needed */
+}
+
+@media only screen and (max-width: 430px) {
+
+  .search-container input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .search-container button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
 }
