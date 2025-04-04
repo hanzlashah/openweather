@@ -16,7 +16,7 @@ const App = () => {
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=024c6864c16a62b52cf5ccf74ca28e19&units=metric`
       );
       const data = await response.json();
-      console.log(data, "hello");
+      // console.log(data, "hello");
 
       if (data.cod === 200) {
         setWeather(data);
